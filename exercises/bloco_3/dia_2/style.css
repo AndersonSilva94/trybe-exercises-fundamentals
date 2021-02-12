@@ -1,0 +1,33 @@
+body{
+    font-size: 16px;
+}
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+ul{
+    background-color: purple;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: oblique;
+}
+.corDeFundo{
+    background-color: aquamarine;
+}
+#lista{
+    line-height: 80px;
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
