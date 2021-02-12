@@ -12,3 +12,25 @@ img{
 .super-mario, .goomba{
     left: 50px;
 }
+.baloon{
+    position: absolute;
+    height: 150px;
+    top: 200px;
+    left: 300px;
+    z-index: 1;
+}
+
+.bowser{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+
+p{
+    font-weight: bold;
+    position: absolute;
+    top: 240px;
+    left: 330px;
+    z-index: 2;
+}
