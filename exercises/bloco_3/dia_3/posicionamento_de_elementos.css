@@ -1,0 +1,14 @@
+img{
+    height: 350px;
+}
+.super-mario{
+    position: absolute;
+    z-index: 1;
+}
+.goomba{
+    position: absolute;
+    top: 400px;
+}
+.super-mario, .goomba{
+    left: 50px;
+}
