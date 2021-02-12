@@ -20,17 +20,15 @@ img{
     z-index: 1;
 }
 
-.bowser{
-    position: absolute;
-    top: 250px;
-    left: 500px;
-}
-
-
 p{
     font-weight: bold;
     position: absolute;
     top: 240px;
     left: 330px;
     z-index: 2;
+}
+.bowser{
+    position: absolute;
+    top: 250px;
+    left: 500px;
 }
