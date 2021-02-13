@@ -1,3 +1,9 @@
 h1, p{
     text-align: center;
 }
+li:hover{
+    background-color: purple;
+}
+li a:hover{
+    color: white;
+}
