@@ -13,3 +13,6 @@ li a:hover{
 li a:active{
     font-family: 'Open Sans', sans-serif;
 }
+ul, ol{
+    list-style: none;
+}
