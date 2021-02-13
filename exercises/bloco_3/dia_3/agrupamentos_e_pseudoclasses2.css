@@ -12,6 +12,7 @@ div:nth-of-type(2){
 }
 div:nth-of-type(3){
     background-image: linear-gradient(to right, yellow, purple);
+    padding: 50px 0px;
 }
 div:nth-of-type(4){
     background-color: brown;
