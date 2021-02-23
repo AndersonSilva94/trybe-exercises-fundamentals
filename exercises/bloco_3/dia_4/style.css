@@ -1,0 +1,43 @@
+/* #header-main, #sobre, #o-que-sou, #classificacao, #grandes-cacadores, #visao, #referencias */
+body{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    padding: 20px;
+}
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+}
+img{
+    max-width: 50%;
+}
+main{
+    height: 100%;
+}
+#sobre{
+    padding: 10px 20px;
+    display: inline-block;
+    width: 65%;
+    float: left;
+    border: 1px solid grey;
+
+}
+aside{
+    height: auto;
+    display: inline-block;
+    width: 29%;
+    float: right;
+}
+#referencias{
+    clear: both;
+}
