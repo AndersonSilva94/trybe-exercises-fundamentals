@@ -36,8 +36,19 @@ let altura = 8;
 
 let area = base * altura;
 
-console.log(area);
+/* console.log(area); */
 
 let perimetro = (2 * base) + (2 * altura);
 
-console.log(perimetro);
+/* console.log(perimetro); */
+
+/* Parte 4 - Conteúdo */
+let notaCandidato = 99.17;
+
+if(notaCandidato >= 80){
+  console.log("Parabéns, você foi aprovado!")
+}else if(notaCandidato < 80 && notaCandidato >= 60){
+  console.log("Você está na nossa lista de espera")
+}else{
+  console.log("Você foi reprovado")
+}
