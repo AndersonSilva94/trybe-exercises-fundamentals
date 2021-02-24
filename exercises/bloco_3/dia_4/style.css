@@ -6,6 +6,7 @@ body{
 }
 p{
     text-align: justify;
+    line-height: 1.5;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,9 @@ h1{
     margin-top: 0;
     color: white;
 }
+h2, nav ul li a{
+    color: rgb(0, 128, 128);
+}
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -29,7 +33,7 @@ nav ul li{
     list-style: none;
     display:inline-block;
     padding: 10px 25px;
-    background-color: white;
+    background-color:white;
     border-radius: 10px;
 }
 nav ul li:hover{
@@ -37,21 +41,48 @@ nav ul li:hover{
 }
 nav ul li a{
     font-weight: bold;
-    color: rgb(0, 128, 128);
 }
 img{
     max-width: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
 }
 main{
     height: 100%;
+    margin: 30px 20px;
 }
 #sobre{
-    padding: 10px 20px;
+    padding: 10px 20px 0 20px;
     display: inline-block;
     width: 65%;
     float: left;
-    border: 1px solid grey;
-
+}
+#sobre section{
+    margin-bottom: 40px;
+}
+#classificacao{
+    display: flex;
+    justify-content: center;
+}
+#classificacao div{
+    background-color: rgb(0, 128, 128);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(1, 94, 94);
+}
+#classificacao h3{
+    text-align: center;
+}
+th{
+    text-align: right;
+    padding-right: 10px;
+}
+#visao{
+    margin-bottom: 0;
 }
 aside{
     height: auto;
