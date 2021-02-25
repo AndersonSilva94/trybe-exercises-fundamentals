@@ -54,3 +54,29 @@ if(lado1 + lado2 + lado3 === 180){
 }else{
   console.log(false)
 }
+
+/* Questão 6 */
+let peca = "Torre";
+
+switch(peca.toLowerCase()){
+  case 'rainha':
+    console.log("Em todas as direções");
+    break;
+  case 'rei':
+    console.log("Em todas as direções, mas uma casa por vez");
+    break;
+  case 'bispo':
+    console.log("Apenas na diagonal da sua casa");
+    break;
+  case 'cavalo':
+    console.log("Movimento em L");
+    break;
+  case 'torre':
+    console.log("Movimento em horizontal e vertical");
+    break;
+  case 'peão':
+    console.log("Movimento para frente, uma casa por vez");
+    break;
+  default:
+    console.log("Não é uma peça!")
+}
