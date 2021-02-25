@@ -45,11 +45,12 @@ if(positivoNegativo > 0 ){
 }
 
 /* Questão 5 */
-let lado1 = 50;
+let lado1 = 40;
 let lado2 = 30;
 let lado3 = 110;
+let somaNova = lado1 + lado2 + lado3;
 
-if(lado1 + lado2 + lado3 === 180){
+if(somaNova === 180){
   console.log(true)
 }else{
   console.log(false)
@@ -79,4 +80,25 @@ switch(peca.toLowerCase()){
     break;
   default:
     console.log("Não é uma peça!")
+}
+
+/* Questão 7 */
+let porcentagem = 85;
+
+if(porcentagem >= 0 && porcentagem <= 100){
+  if(porcentagem >= 90){
+    console.log("A")
+  }else if(porcentagem >= 80){
+    console.log("B")
+  }else if(porcentagem >= 70){
+    console.log("C")
+  }else if(porcentagem >= 60){
+    console.log("D")
+  }else if(porcentagem >= 50){
+    console.log("E")
+  }else if(porcentagem < 50 && porcentagem >= 0){
+    console.log("F")
+  }
+}else{
+  console.log("Erro")
 }
