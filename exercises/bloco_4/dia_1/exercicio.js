@@ -8,4 +8,14 @@ let divisao = a / b;
 let multiplicacao = a * b;
 let modulo = a % b;
 
-console.log(soma, subtracao, divisao, multiplicacao, modulo)
+/* console.log(soma, subtracao, divisao, multiplicacao, modulo) */
+
+/* Questão 2 */
+let num1 = 8;
+let num2 = 5;
+
+if(num1 > num2){
+  console.log(num1)
+}else{
+  console.log(num2)
+}
