@@ -113,3 +113,28 @@ if(num6 % 2 === 0 || num7 % 2 === 0 || num8 % 2 === 0){
 }else{
   console.log(false)
 }
+
+/* Questão 9 */
+let num9 = 2;
+let num10 = 8;
+let num11 = 4;
+
+if(num9 % 2 !== 0 || num10 % 2 !== 0 || num11 % 2 !== 0){
+  console.log(true)
+}else{
+  console.log(false)
+}
+
+/* Questão 10 */
+let custoProduto = 5;
+let valorVenda = 8;
+let valorCustoTotal;
+let lucro;
+
+if(custoProduto < 0 || valorVenda < 0){
+  console.log("Pane no sistema! Erro!");
+}else{
+  valorCustoTotal = custoProduto + (0.2 * custoProduto);
+  lucro = valorVenda - valorCustoTotal
+  console.log(lucro * 1000);
+}
