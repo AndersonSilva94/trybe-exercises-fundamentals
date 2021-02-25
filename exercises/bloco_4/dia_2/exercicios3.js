@@ -9,3 +9,10 @@ for (let index = 0; index < numbers.length; index += 1){
 
 let media = soma / numbers.length
 console.log(media)
+
+//Questão 4
+if(media > 20){
+  console.log("Valor maior que 20")
+}else{
+  console.log("Valor menor que 20")
+}
