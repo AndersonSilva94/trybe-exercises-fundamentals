@@ -102,3 +102,14 @@ if(porcentagem >= 0 && porcentagem <= 100){
 }else{
   console.log("Erro")
 }
+
+/* Questão 8 */
+let num6 = 7;
+let num7 = 3;
+let num8 = 5;
+
+if(num6 % 2 === 0 || num7 % 2 === 0 || num8 % 2 === 0){
+  console.log(true)
+}else{
+  console.log(false)
+}
