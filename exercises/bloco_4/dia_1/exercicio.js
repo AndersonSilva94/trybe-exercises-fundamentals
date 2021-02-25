@@ -143,7 +143,7 @@ if(custoProduto < 0 || valorVenda < 0){
 let inss;
 let ir;
 let salarioBruto = 3000;
-let salarioBase
+let salarioLiquido
 
 if(salarioBruto <= 1556.94){
   inss = salarioBruto * 0.08;
@@ -155,20 +155,20 @@ if(salarioBruto <= 1556.94){
   inss = salarioBruto - 570.88
 }
 
-salarioBase = salarioBruto - inss
+salarioLiquido = salarioBruto - inss
 
-if(salarioBase <= 1903.98){
-  ir = salarioBase;
-}else if(salarioBase <= 2826.65){
-  ir = (salarioBase * 0.075) - 142.80; 
-}else if(salarioBase <= 3751.05){
-  ir = (salarioBase * 0.15) - 354.80;
-}else if(salarioBase <= 4664.68){
-  ir = (salarioBase * 0.225) - 636.13;
+if(salarioLiquido <= 1903.98){
+  ir = 0;
+}else if(salarioLiquido <= 2826.65){
+  ir = (salarioLiquido * 0.075) - 142.80; 
+}else if(salarioLiquido <= 3751.05){
+  ir = (salarioLiquido * 0.15) - 354.80;
+}else if(salarioLiquido <= 4664.68){
+  ir = (salarioLiquido * 0.225) - 636.13;
 }else{
-  ir = (salarioBase * 0.275) - 869.36
+  ir = (salarioLiquido * 0.275) - 869.36
 }
 
-salarioBase = salarioBase -ir
+salarioLiquido = salarioLiquido - ir
 
-console.log(salarioBase)
+console.log(salarioLiquido)
