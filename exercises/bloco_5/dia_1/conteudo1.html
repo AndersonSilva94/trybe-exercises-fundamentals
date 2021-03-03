@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph">Segundo parágrafo!</p>
+
+    <script>
+      var paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      console.log(document.getElementById("paragraph"))
+
+      //Questão 1
+      document.getElementById("page-title").innerText = "Com amor, Simon";
+
+      //Questão 2
+      let secondParagraph = document.getElementById("second-paragraph");
+      secondParagraph.innerText = "Esta é minha cor favorita";
+      secondParagraph.style.color = "white";
+      secondParagraph.style.backgroundColor = "purple";
+      secondParagraph.style.padding = "15px";
+
+      //Questão 3
+      document.getElementById("subtitle").innerHTML = "Meu nome é <strong>Anderson</strong> e meu apelido é <em>Andy</em>"
+    </script>
+  </body>
+</html>
