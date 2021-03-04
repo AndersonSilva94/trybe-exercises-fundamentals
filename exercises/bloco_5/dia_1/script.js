@@ -28,12 +28,17 @@ function escreverParagrafo (texto, texto1, texto2) {
   paragrafo[0].innerHTML = texto;
   paragrafo[1].innerHTML = texto1;
   paragrafo[2].innerHTML = texto2;
-
 }
 
 escreverParagrafo("lindo", "rico", "feliz")
 
- /* Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ /* Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).*/
+function mudarCorFundo (cor) {
+
+  document.getElementsByClassName("main-content")[0].style.backgroundColor = cor;
+}
+mudarCorFundo("rgb(76,164,109)");
+ /*
  Crie uma função que mude a cor do quadrado vermelho para branco.
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
