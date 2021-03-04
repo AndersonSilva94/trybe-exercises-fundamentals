@@ -40,6 +40,13 @@ function mudarCorFundo (cor) {
 mudarCorFundo("rgb(76,164,109)");
  /*
  Crie uma função que mude a cor do quadrado vermelho para branco.
+ */
+ function mudarQuadradoFundo(cor) {
+   document.getElementsByClassName("center-content")[0].style.backgroundColor = cor;
+ }
+ mudarQuadradoFundo("white");
+ 
+ /*
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
