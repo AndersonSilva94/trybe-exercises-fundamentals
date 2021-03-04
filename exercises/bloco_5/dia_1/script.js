@@ -54,5 +54,13 @@ function corrigirTexto (correcao){
 corrigirTexto("Script");
  /*
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ */
+function letraMaiuscula () {
+  let aumentaLetra = document.getElementsByTagName("p");
+  for(let index = 0; index < aumentaLetra.length; index += 1){
+    aumentaLetra[index].style.textTransform = "uppercase";
+  }
+}
+letraMaiuscula();
+ /*
  Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
-        
