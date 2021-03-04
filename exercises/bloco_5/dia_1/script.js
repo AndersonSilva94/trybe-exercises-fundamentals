@@ -38,6 +38,7 @@ function mudarCorFundo (cor) {
   document.getElementsByClassName("main-content")[0].style.backgroundColor = cor;
 }
 mudarCorFundo("rgb(76,164,109)");
+
  /*
  Crie uma função que mude a cor do quadrado vermelho para branco.
  */
@@ -52,6 +53,7 @@ function corrigirTexto (correcao){
   document.getElementsByClassName("title")[0].innerHTML = "Exercício 5.1 - Java" + correcao;
 }
 corrigirTexto("Script");
+
  /*
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  */
@@ -62,5 +64,13 @@ function letraMaiuscula () {
   }
 }
 letraMaiuscula();
+
  /*
  Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
+function printar (){
+  let printTag = document.getElementsByTagName("p");
+  for(let index = 0; index < printTag.length; index += 1){
+    console.log(printTag[index]);
+  }
+}
+printar();
