@@ -47,7 +47,12 @@ mudarCorFundo("rgb(76,164,109)");
  mudarQuadradoFundo("white");
  
  /*
- Crie uma função que corrija o texto da tag <h1>.
+ Crie uma função que corrija o texto da tag <h1>. */
+function corrigirTexto (correcao){
+  document.getElementsByClassName("title")[0].innerHTML = "Exercício 5.1 - Java" + correcao;
+}
+corrigirTexto("Script");
+ /*
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
         
