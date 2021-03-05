@@ -86,7 +86,14 @@
       document.querySelector(".left-content").appendChild(image).src = "https://picsum.photos/200";
       document.getElementsByTagName("img")[0].className = "small-image";
 
-
+      //Questão 8
+      let ul = document.createElement("ul");
+      let numero = 1
+      document.querySelector(".right-content").appendChild(ul)
+      for(let index = 1; index <= 10; index += 1){
+        let li = document.createElement("li")
+        document.querySelector("ul").appendChild(li).innerText = numero++
+      }
     </script>
   </body>
 </html>
