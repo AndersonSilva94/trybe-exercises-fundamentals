@@ -90,8 +90,9 @@
       let ul = document.createElement("ul");
       let numero = 1
       document.querySelector(".right-content").appendChild(ul)
+      let li;
       for(let index = 1; index <= 10; index += 1){
-        let li = document.createElement("li")
+        li = document.createElement("li")
         document.querySelector("ul").appendChild(li).innerText = numero++
       }
 
@@ -117,6 +118,10 @@
 
       //Questão 14
       div2.parentElement.style.backgroundColor = "green"
+
+      //Questão 15
+      ul.lastElementChild.remove(li);
+      ul.lastElementChild.remove(li);
     </script>
   </body>
 </html>
