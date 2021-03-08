@@ -47,25 +47,6 @@ function createButtonHoliday(string){
 createButtonHoliday('Feriados');
 
 //Questão 3
-/* function displayHolidays() {
-  let getHolidayButton = document.querySelector('#btn-holiday');
-  let getHolidays = document.querySelectorAll('.holiday')
-  let backgroundColor = 'rgb(238,238,238)';
-  let setNewColor = 'white';
-
-  getHolidayButton.addEventListener('click', function() {
-    for (let index = 0; index < getHolidays.length; index += 1) {
-      if (getHolidays[index].style.backgroundColor === setNewColor) {
-        getHolidays[index].style.backgroundColor = backgroundColor;
-      } else {
-        getHolidays[index].style.backgroundColor = setNewColor;
-      }
-    }
-  })
-};
-
-displayHolidays();
- */
 function changeBackgroundColor() {
   let clickButtonHoliday = document.querySelector('#btn-holiday');
   let holidays = document.getElementsByClassName('holiday');
@@ -81,3 +62,13 @@ function changeBackgroundColor() {
   })
 }
 changeBackgroundColor();
+
+//Questão 4
+function createButtonFriday(string){
+  let insertButton = document.querySelector('.buttons-container')
+  let buttonFriday = document.createElement('button');
+  buttonFriday.innerText = string
+  buttonFriday.id = 'btn-friday';
+  insertButton.appendChild(buttonFriday);
+}
+createButtonHoliday('Sexta-feira');
