@@ -35,3 +35,13 @@ function createDaysOfMonth(){
   }
 }
 createDaysOfMonth();
+
+//Questão 2
+function createButtonHoliday(string){
+  let insertButton = document.querySelector('.buttons-container')
+  let buttonHoliday = document.createElement('button');
+  buttonHoliday.innerText = string
+  buttonHoliday.id = 'btn-holiday';
+  insertButton.appendChild(buttonHoliday);
+}
+createButtonHoliday('Feriados');
