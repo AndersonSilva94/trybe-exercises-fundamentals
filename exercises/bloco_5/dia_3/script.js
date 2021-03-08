@@ -45,3 +45,39 @@ function createButtonHoliday(string){
   insertButton.appendChild(buttonHoliday);
 }
 createButtonHoliday('Feriados');
+
+//Questão 3
+/* function displayHolidays() {
+  let getHolidayButton = document.querySelector('#btn-holiday');
+  let getHolidays = document.querySelectorAll('.holiday')
+  let backgroundColor = 'rgb(238,238,238)';
+  let setNewColor = 'white';
+
+  getHolidayButton.addEventListener('click', function() {
+    for (let index = 0; index < getHolidays.length; index += 1) {
+      if (getHolidays[index].style.backgroundColor === setNewColor) {
+        getHolidays[index].style.backgroundColor = backgroundColor;
+      } else {
+        getHolidays[index].style.backgroundColor = setNewColor;
+      }
+    }
+  })
+};
+
+displayHolidays();
+ */
+function changeBackgroundColor() {
+  let clickButtonHoliday = document.querySelector('#btn-holiday');
+  let holidays = document.getElementsByClassName('holiday');
+  
+  clickButtonHoliday.addEventListener('click', function(){
+    for(let index = 0; index < holidays.length; index += 1){
+      if(holidays[index].style.backgroundColor === 'white') {
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        holidays[index].style.backgroundColor = 'white';
+      }
+    }
+  })
+}
+changeBackgroundColor();
