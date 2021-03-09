@@ -116,4 +116,14 @@ function addTasks(string) {
   textTasks.innerText = string;
   divTasks.appendChild(textTasks);
 }
-addTasks('exercitar muito!')
+addTasks('exercitar muito!');
+
+//Questão 8
+function subtitleColors(cor) {
+  let divTasks = document.querySelector('.my-tasks');
+  let divColor = document.createElement('div');
+  divColor.className = 'task';
+  divColor.style.backgroundColor = cor;
+  divTasks.appendChild(divColor);
+}
+subtitleColors("purple");
