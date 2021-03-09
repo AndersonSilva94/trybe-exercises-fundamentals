@@ -20,6 +20,7 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 
 function createDaysOfMonth(){
   let daysOfMonth = document.getElementById('days');
+  console.log(daysOfMonth)
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let day = dezDaysList[index];
     let days = document.createElement('li');
@@ -91,3 +92,19 @@ function changeFridayDay() {
   })
 }
 changeFridayDay();
+
+//Questão 6
+let days = document.getElementById('days');
+console.log(days)
+function mouseOver() {
+  days.addEventListener('mouseover', function(e) {
+    e.target.style.fontSize = "40px"
+  });
+}
+function mouseOut(){
+  days.addEventListener('mouseout', function(e){
+    e.target.style.fontSize = "20px";
+  })
+}
+mouseOver();
+mouseOut();
