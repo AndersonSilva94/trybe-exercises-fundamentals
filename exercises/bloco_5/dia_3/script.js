@@ -108,3 +108,12 @@ function mouseOut(){
 }
 mouseOver();
 mouseOut();
+
+//Questão 7
+function addTasks(string) {
+  let divTasks = document.querySelector('.my-tasks');
+  let textTasks = document.createElement('span');
+  textTasks.innerText = string;
+  divTasks.appendChild(textTasks);
+}
+addTasks('exercitar muito!')
