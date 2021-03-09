@@ -71,4 +71,23 @@ function createButtonFriday(string){
   buttonFriday.id = 'btn-friday';
   insertButton.appendChild(buttonFriday);
 }
-createButtonHoliday('Sexta-feira');
+createButtonFriday('Sexta-feira');
+
+//Questão 5
+function changeFridayDay() {
+  let arrayFriday = [4, 11, 18, 25];
+  let clickButtonFriday = document.querySelector('#btn-friday');
+  console.log(clickButtonFriday)
+  let fridays = document.getElementsByClassName('friday');
+  console.log(fridays)
+  clickButtonFriday.addEventListener('click', function() {
+    for (let index = 0; index < fridays.length; index += 1) {
+      if(fridays[index].innerText !== 'É sexta!'){
+        fridays[index].innerText = 'É sexta!';
+      } else {
+        fridays[index].innerText = arrayFriday[index]
+      }
+    }
+  })
+}
+changeFridayDay();
