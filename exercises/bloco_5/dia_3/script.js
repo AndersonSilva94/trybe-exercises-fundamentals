@@ -159,3 +159,30 @@ function addEvent() {
   })
 }
 addEvent()
+
+// Questão Bônus
+function addInputTasks() {
+  let buttonAdd = document.getElementById('btn-add');
+  let inputValue = document.getElementById('task-input');
+  buttonAdd.addEventListener('click', a)
+  inputValue.addEventListener('keyup', (e) => {
+    if(e.key === 'Enter'){
+      a();
+    }
+  })
+
+  function a () {
+    let divTasks = document.querySelector('.my-tasks');
+    let inputValue = document.getElementById('task-input');
+    if (inputValue.value === ''){
+      alert('Digite uma tarefa!');
+      inputValue.value = '';
+    } else {
+      let task = document.createElement('p');
+      task.innerText = inputValue.value;
+      inputValue.value = '';
+      divTasks.appendChild(task);
+    }
+  }
+}
+addInputTasks()
