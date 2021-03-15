@@ -20,7 +20,6 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 
 function createDaysOfMonth(){
   let daysOfMonth = document.getElementById('days');
-  console.log(daysOfMonth)
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let day = dezDaysList[index];
     let days = document.createElement('li');
@@ -78,9 +77,7 @@ createButtonFriday('Sexta-feira');
 function changeFridayDay() {
   let arrayFriday = [4, 11, 18, 25];
   let clickButtonFriday = document.querySelector('#btn-friday');
-  console.log(clickButtonFriday)
   let fridays = document.getElementsByClassName('friday');
-  console.log(fridays)
   clickButtonFriday.addEventListener('click', function() {
     for (let index = 0; index < fridays.length; index += 1) {
       if(fridays[index].innerText !== 'É sexta!'){
@@ -95,7 +92,6 @@ changeFridayDay();
 
 //Questão 6
 let days = document.getElementById('days');
-console.log(days)
 function mouseOver() {
   days.addEventListener('mouseover', function(e) {
     e.target.style.fontSize = "40px"
@@ -127,3 +123,20 @@ function subtitleColors(cor) {
   divTasks.appendChild(divColor);
 }
 subtitleColors("purple");
+subtitleColors("green");
+subtitleColors("aquamarine");
+
+//Questão 9
+function setTaskClass() {
+  let listTasks = document.querySelector('.my-tasks');
+  listTasks.addEventListener('click', function(event) {
+    let myTasks = document.querySelectorAll('.task')  
+    let eventTask = event.target;
+    for (let index = 0; index < myTasks.length; index += 1) {
+      myTasks[index].classList.remove('selected');
+      eventTask.classList.add('selected');
+    }
+  });
+};
+
+setTaskClass();
