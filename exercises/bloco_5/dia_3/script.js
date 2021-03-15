@@ -134,9 +134,11 @@ function setTaskClass() {
     let eventTask = event.target;
     for (let index = 0; index < myTasks.length; index += 1) {
       myTasks[index].classList.remove('selected');
-      eventTask.classList.add('selected');
+      if(eventTask.className === 'task')
+        eventTask.classList.add('selected');
     }
   });
 };
 
 setTaskClass();
+
