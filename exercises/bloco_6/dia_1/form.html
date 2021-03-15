@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -23,7 +24,11 @@
       <input type="text" name="adress" id="adress" maxlength="200" required>
       <p>Cidade:</p>
       <input type="text" name="city" id="city" required maxlength="28">
+      <label for="estado">Escolha seu estado:
+        <select name="estado" id="estado" required></select>
+      </label>
     </fieldset>
   </form>
+  <script src="script.js"></script>
 </body>
 </html>
