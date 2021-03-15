@@ -142,3 +142,20 @@ function setTaskClass() {
 
 setTaskClass();
 
+// Questão 10
+function addEvent() {
+  let days = document.getElementById('days');
+  days.addEventListener('click', (e) => {
+    let eventTarget1 = e.target;
+    let selected = document.querySelector('.selected');
+    let listDay = document.getElementsByClassName('day');
+    for (let index = 0; index < listDay.length; index += 1) {
+      if (listDay[index].classList.contains('day') && eventTarget1.style.color === selected.style.backgroundColor) {
+        eventTarget1.style.color = 'rgb(119,119,119)';
+      } else {
+        eventTarget1.style.color = selected.style.backgroundColor;
+      }
+    }
+  })
+}
+addEvent()
