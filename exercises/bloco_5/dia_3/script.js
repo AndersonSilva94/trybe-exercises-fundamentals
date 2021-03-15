@@ -94,12 +94,12 @@ changeFridayDay();
 let days = document.getElementById('days');
 function mouseOver() {
   days.addEventListener('mouseover', function(e) {
-    e.target.style.fontSize = "40px"
+    e.target.style.transform = "scale(2)"
   });
 }
 function mouseOut(){
   days.addEventListener('mouseout', function(e){
-    e.target.style.fontSize = "20px";
+    e.target.style.transform = "scale(1)";
   })
 }
 mouseOver();
