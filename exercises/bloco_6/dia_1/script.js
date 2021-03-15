@@ -3,7 +3,7 @@ const states = [{ estado: "Acre", sigla: "ac" },{ estado: "Alagoas", sigla: "al"
 
 function createStates() {
   for(let index = 0; index < states.length; index += 1){
-    let optionState = document.createElement('option');
+    const optionState = document.createElement('option');
     optionState.innerText = states[index].estado;
     optionState.value = states[index].sigla;
     selectState.appendChild(optionState)
