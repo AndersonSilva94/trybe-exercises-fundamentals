@@ -9,4 +9,25 @@ function createStates() {
     selectState.appendChild(optionState)
   }
 }
-createStates()
+createStates();
+
+function getDate() {
+  const date = document.getElementById('date').value.split('/');
+  const day = parseInt(date[0]);
+  const month = parseInt(date[1]);
+  const year = parseInt(date[2]);
+  return { day: day, month: month, year: year}
+}
+
+function setDate() {
+  const submitButton = document.getElementById('enviar');
+  submitButton.addEventListener('click', (e) => {
+    //e.preventDefault();
+    const date = getDate()
+    console.log(date)
+    if (date.day < 0 && date.day > 31 || date.month < 0 && date.month > 12 || -date.year) {
+      alert('data errada!')
+    }
+  })
+}
+setDate();

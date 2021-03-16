@@ -11,7 +11,7 @@
   <header>
     <h1>Formulário de currículo</h1>
   </header>
-  <form action="POST">
+  <form>
     <fieldset>
       <legend>Dados Pessoais</legend>
       <p>Nome completo:</p>
@@ -39,7 +39,10 @@
       <input type="text" name="office" id="office" maxlength="40" required>
       <p>Descrição do cargo:</p>
       <input type="text" name="description" id="description" maxlength="500" required>
+      <p>Data de início:</p>
+      <input type="text" name="date" id="date" maxlength="10" required placeholder="dd/mm/aaaa">
     </fieldset>
+    <button type="submit" id="enviar">Enviar</button>
   </form>
   <script src="script.js"></script>
 </body>
