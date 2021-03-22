@@ -15,32 +15,32 @@
     <fieldset>
       <legend>Dados Pessoais</legend>
       <p>Nome completo:</p>
-      <input id="name" name="name" type="text" maxlength="40" required>
+      <input id="name" name="name" type="text" maxlength="40">
       <p>Digite seu e-mail:</p>
-      <input type="email" name="email" id="email" maxlength="50" required>
+      <input type="email" name="email" id="email" maxlength="50">
       <p>Digite seu CPF:</p>
-      <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      <input type="text" name="cpf" id="cpf" maxlength="11">
       <p>Endereço:</p>
-      <input type="text" name="adress" id="adress" maxlength="200" required>
+      <input type="text" name="adress" id="adress" maxlength="200">
       <p>Cidade:</p>
-      <input type="text" name="city" id="city" required maxlength="28">
+      <input type="text" name="city" id="city" maxlength="28">
       <label for="estado">Escolha seu estado:
-        <select name="estado" id="estado" required></select>
+        <select name="estado" id="estado"></select>
       </label>
       <p>Mora em:</p>
-      <input required type="radio" name="home" id="home-1">Casa
-      <input required type="radio" name="home" id="home-2">Apartamento
+      <input type="radio" name="home" id="home-1">Casa
+      <input type="radio" name="home" id="home-2">Apartamento
     </fieldset>
     <fieldset>
       <legend>Dados sobre último emprego</legend>
       <p>Resumo:</p>
-      <textarea name="resume" id="resume" cols="100" rows="10" maxlength="1000" required></textarea>
+      <textarea name="resume" id="resume" cols="100" rows="10" maxlength="1000"></textarea>
       <p>Cargo:</p>
-      <input type="text" name="office" id="office" maxlength="40" required>
+      <input type="text" name="office" id="office" maxlength="40">
       <p>Descrição do cargo:</p>
-      <input type="text" name="description" id="description" maxlength="500" required>
+      <input type="text" name="description" id="description" maxlength="500">
       <p>Data de início:</p>
-      <input type="text" name="date" id="date" maxlength="10" required placeholder="dd/mm/aaaa">
+      <input type="text" name="date" id="date" maxlength="10" placeholder="dd/mm/aaaa">
     </fieldset>
     <button type="submit" id="enviar">Enviar</button>
   </form>

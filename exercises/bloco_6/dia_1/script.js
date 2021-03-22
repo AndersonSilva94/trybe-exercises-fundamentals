@@ -11,12 +11,12 @@ function createStates() {
 }
 createStates();
 
-/* function getDate() {
+function getDate() {
   const date = document.getElementById('date').value.split('/');
   const day = parseInt(date[0]);
   const month = parseInt(date[1]);
   const year = parseInt(date[2]);
-  if ((day > 0 && day < 31) && (month > 0 && month < 12) && (year > 0 && year.length === 4)) {
+  if ((day > 0 && day <= 31) && (month > 0 && month <= 12) && year > 1900) {
     return true
   }
   return false
@@ -25,12 +25,15 @@ createStates();
 function setDate() {
   const submitButton = document.getElementById('enviar');
   submitButton.addEventListener('click', (e) => {
-    //e.preventDefault();
     const date = getDate()
-    console.log(date)
-    
+    if (date) {
+      console.log('1 ' + date)
+    } else {
+      e.preventDefault();
+      console.log('2 ' + date)
+    }
   })
 }
 
-setDate(); */
+setDate();
 
