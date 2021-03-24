@@ -15,3 +15,19 @@ const factorialNumber = number => {
 };
 
 console.log(factorialNumber(3));
+
+/* 2- Crie uma função que receba uma frase e retorne qual a maior palavra. */
+
+const longestWord = string => {
+  const words = string.split(' ');
+  let lengthWords = 0;
+  let highWord = '';
+  for (let index = 0; index < words.length; index += 1) {
+    if (words[index].length > lengthWords) {
+      lengthWords = words[index].length;
+      highWord = words[index];
+    }
+  }
+  return highWord
+}
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"))
