@@ -49,4 +49,4 @@ const doThing = (action) => action();
 
 doThing(wakeUp);
 doThing(coffee);
-doThing(sleep)
+doThing(sleep);
