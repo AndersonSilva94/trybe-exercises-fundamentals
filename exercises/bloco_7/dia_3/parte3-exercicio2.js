@@ -5,7 +5,7 @@ const removeVowels = (word) => {
   let value = 0;
   const results = [];
 
-  for (let index = 0; index < characters.length; index += 1) {
+  for (let index in characters) {
     if (
       characters[index] === 'a' ||
       characters[index] === 'o' ||
