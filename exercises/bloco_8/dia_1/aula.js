@@ -45,8 +45,8 @@ const coffee = () => console.log("Bora tomar café!");
 
 const sleep = () => console.log("Partiu dormir!");
 
-const doThing = (action) => action();
+const doingThings = (action) => action();
 
-doThing(wakeUp);
-doThing(coffee);
-doThing(sleep);
+doingThings(wakeUp);
+doingThings(coffee);
+doingThings(sleep);
