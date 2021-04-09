@@ -26,9 +26,23 @@ O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo
 const dragonDamage = (obj) => {
   let maxStrength = obj.strength;
   const damageDragon = Math.round(Math.random() * (maxStrength - 15) + 15);
-  obj.damage = damageDragon
-  return damageDragon
+  obj.damage = damageDragon;
+  return obj.damage;
 }
 
 /* console.log(dragonDamage(dragon))
 console.log(dragon) */
+
+/* 2 - Crie uma função que retorna o dano causado pelo warrior .
+O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).*/
+
+const warriorDamage = (obj) => {
+  let minStrength = obj.strength;
+  let maxStrength = obj.strength * obj.weaponDmg;
+  const damageWarrior = Math.round(Math.random() * (maxStrength - minStrength) + minStrength);
+  obj.damage = damageWarrior;
+  return obj.damage;
+}
+
+/* console.log(warriorDamage(warrior));
+console.log(warrior); */
