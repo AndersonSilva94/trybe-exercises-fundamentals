@@ -61,11 +61,10 @@ const damageMage = (obj) => {
   }
   if (objMana < 15) {
     objReturned.dano = "Não possui mana suficiente";
-    objReturned.mana = objMana;
     return objReturned;
   }
   else {
-    objReturned.mana -= 15
+    objReturned.mana -= 15;
     return objReturned;
   }
 }
