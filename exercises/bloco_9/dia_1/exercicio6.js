@@ -19,12 +19,7 @@ const sendMarsTemperature = (callback, onFail) => {
   setTimeout(() => {
     const calcSendEmailPercent = Math.random() <= 0.6;
     const error = 'Robot is busy!'
-    // console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius`)
-    if(temperatureInFahrenheit){
-      return calcSendEmailPercent ? callback(getMarsTemperature()) : onFail(error);
-    } else {
-      return calcSendEmailPercent ? callback(getMarsTemperature()) : onFail(error)
-    }
+    return calcSendEmailPercent ? callback(getMarsTemperature()) : onFail(error);
   }, messageDelay());
 }
 

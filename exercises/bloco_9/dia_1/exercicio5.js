@@ -15,11 +15,7 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 const sendMarsTemperature = (callback) => {
   setTimeout(() => {
     // console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius`)
-    if(temperatureInFahrenheit){
-      callback(getMarsTemperature())
-    } else {
-      callback(getMarsTemperature())
-    }
+    callback(getMarsTemperature())
   }, messageDelay());
 }
 
