@@ -1,0 +1,27 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "<h1>Exercícios de fixação de blocos de conteúdo da Trybe</h1>",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonSilva94/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndersonSilva94/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/AndersonSilva94/trybe-exercises#readme"
+}
