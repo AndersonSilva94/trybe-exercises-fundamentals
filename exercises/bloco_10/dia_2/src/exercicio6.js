@@ -25,7 +25,29 @@ const getAnimal = async (name) => {
   }
 };
 
-// getAnimal("Soneca")
+const findAnimalsByAge = (age) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const arrayAnimals = Animals.filter((animal) => animal.age === age);
+      if (arrayAnimals.length !== 0) {
+        resolve(arrayAnimals);
+      };
+        reject('Nenhum animal com essa idade!');
+    }, 100);
+  })
+}
+
+const getAge = async (age) => {
+  const func2 = await findAnimalsByAge(age)
+  try {
+    return func2
+  } catch (error) {
+    return error
+  }
+};
+
+//getAge(5)
 module.exports = {
   getAnimal,
+  getAge
 }
