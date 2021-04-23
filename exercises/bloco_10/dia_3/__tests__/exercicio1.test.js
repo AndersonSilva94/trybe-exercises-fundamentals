@@ -2,7 +2,7 @@
 const { test, expect } = require('@jest/globals');
 const data = require('../src/exercicio1');
 
-describe('test random numbers', () => {
+describe('test random number 1', () => {
   test('test number 10', () => {
     data.randomNumber = jest
     .fn()

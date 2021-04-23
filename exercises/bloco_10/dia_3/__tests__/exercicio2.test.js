@@ -4,7 +4,7 @@ const data = require('../src/exercicio1');
 const { test, expect } = require('@jest/globals');
 // const { describe } = require('yargs');
 
-describe('test random number', () => {
+describe('test random number 2', () => {
   test('create a new implementation', () => {
     data.randomNumber = jest
     .fn()
