@@ -62,20 +62,20 @@ test('get API', async () => {
 })
 
 describe('testing function showDog', () => {
-  data.showDog = jest.fn();
-  afterEach(data.showDog.mockReset);
-  test('test resolve showDog', async () => {
-    data.showDog.mockResolvedValue('request success');
-    data.showDog();
-    expect(data.showDog).toHaveBeenCalled();
-    expect(data.showDog).toHaveBeenCalledTimes(1);
-    expect(data.showDog()).resolves.toBe('request success');
-    expect(data.showDog).toHaveBeenCalledTimes(2);
+  data.showPictures = jest.fn();
+  afterEach(data.showPictures.mockReset);
+  test('test resolve showPictures', async () => {
+    data.showPictures.mockResolvedValue('request success');
+    data.showPictures();
+    expect(data.showPictures).toHaveBeenCalled();
+    expect(data.showPictures).toHaveBeenCalledTimes(1);
+    expect(data.showPictures()).resolves.toBe('request success');
+    expect(data.showPictures).toHaveBeenCalledTimes(2);
   });
-  test('test reject showDog', async () => {
-    data.showDog.mockRejectedValue('request failed');
-    expect(data.showDog).toHaveBeenCalledTimes(0);
-    expect(data.showDog()).rejects.toBe('request failed');
-    expect(data.showDog).toHaveBeenCalledTimes(1);
+  test('test reject showPictures', async () => {
+    data.showPictures.mockRejectedValue('request failed');
+    expect(data.showPictures).toHaveBeenCalledTimes(0);
+    expect(data.showPictures()).rejects.toBe('request failed');
+    expect(data.showPictures).toHaveBeenCalledTimes(1);
   });
 });
