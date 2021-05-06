@@ -1,3 +1,4 @@
+![image](https://github.com/AndersonSilva94/trybe-exercises-fundamentals/blob/master/assets/CAPA%20LINKEDIN_PERFIL%20PESSOAL03.png)
 # Módulo 1 - Fundamentos do Desenvolvimento Web
 
 ## :rocket: Exercícios e estudos
